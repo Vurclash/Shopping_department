@@ -1,0 +1,8 @@
+<h1><%= @shop.name %></h1>
+<hr />
+<p>What would you like to do?</p>
+<%= link_to 'View Items', shop_inventories_path(@shop %>
+<br />
+<%= link_to 'Edit Items', edit_shop_path(@shop) %>
+<br />
+<%= link_to 'Delete Item', @shop, method: :delete %>
